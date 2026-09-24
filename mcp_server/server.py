@@ -829,7 +829,7 @@ async def main():
     # Startup banner
     # ------------------------------------------------------------------
     console.print(
-        "\n[bold red]GitRoast MCP Server v0.5.0 - Online[/bold red]\n"
+        "\n[bold red]GitRoast — AI Developer Intelligence Platform v0.5.0 - Online[/bold red]\n"
         "[dim]LLM: Groq (llama-3.3-70b-versatile) - Free tier[/dim]\n"
         "[bold green]Phase 5 LIVE: Team Roast + File Watcher + Webhooks[/bold green]\n"
         "[dim]11 tools registered. Waiting for connections via stdio...[/dim]\n"
