@@ -5,7 +5,7 @@ build-backend = "setuptools.backends.legacy:build"
 [project]
 name = "gitroast"
 version = "0.5.0"
-description = "AI-powered developer intelligence MCP server — GitRoast"
+description = "GitRoast — AI Developer Intelligence Platform"
 authors = [{ name = "GitRoast", email = "gitroast@example.com" }]
 license = { file = "LICENSE" }
 readme = "README.md"
