@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="GitRoast — AI Developer Intelligence" width="100%"/>
+<img src="assets/banner.svg" alt="GitRoast — AI Developer Intelligence Platform" width="100%"/>
+
+# GitRoast — AI Developer Intelligence Platform
 
 <br/>
 
