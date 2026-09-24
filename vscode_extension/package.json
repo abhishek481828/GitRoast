@@ -1,0 +1,146 @@
+{
+  "name": "gitroast",
+  "displayName": "GitRoast — AI Developer Intelligence",
+  "description": "AI-powered developer roasting, code analysis, idea stress-testing, and competitor research via MCP",
+  "version": "0.5.0",
+  "publisher": "gitroast",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["AI", "Other"],
+  "keywords": ["github", "ai", "roast", "mcp", "developer-tools", "code-review", "competitor-research"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "icon": "media/logo.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitroast.analyzeProfile",
+        "title": "GitRoast: Analyze GitHub Profile",
+        "icon": "$(github)"
+      },
+      {
+        "command": "gitroast.analyzeCodeQuality",
+        "title": "GitRoast: Analyze Code Quality",
+        "icon": "$(beaker)"
+      },
+      {
+        "command": "gitroast.setPersonality",
+        "title": "GitRoast: Switch Personality Mode",
+        "icon": "$(smiley)"
+      },
+      {
+        "command": "gitroast.clearSession",
+        "title": "GitRoast: Clear Session",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "gitroast.openChat",
+        "title": "GitRoast: Open Chat Panel",
+        "icon": "$(comment-discussion)"
+      },
+      {
+        "command": "gitroast.addInlineComments",
+        "title": "GitRoast: Add Inline Code Comments",
+        "icon": "$(comment)"
+      },
+      {
+        "command": "gitroast.clearInlineComments",
+        "title": "GitRoast: Clear Inline Comments",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "gitroast.openSidebar",
+        "title": "GitRoast: Open Sidebar",
+        "icon": "$(flame)"
+      },
+      {
+        "command": "gitroast.showWelcome",
+        "title": "GitRoast: Show Welcome Page",
+        "icon": "$(info)"
+      },
+      {
+        "command": "gitroast.stressTestIdea",
+        "title": "GitRoast: Stress Test Idea",
+        "icon": "$(law)"
+      },
+      {
+        "command": "gitroast.scaffoldProject",
+        "title": "GitRoast: Scaffold Project",
+        "icon": "$(file-directory-create)"
+      },
+      {
+        "command": "gitroast.researchCompetitors",
+        "title": "GitRoast: Research Competitors",
+        "icon": "$(search)"
+      },
+      {
+        "command": "gitroast.roastTeam",
+        "title": "GitRoast: Roast Team",
+        "icon": "$(organization)"
+      },
+      {
+        "command": "gitroast.toggleFileWatcher",
+        "title": "GitRoast: Toggle File Watcher",
+        "icon": "$(eye)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "gitroast.analyzeProfile",
+        "key": "ctrl+shift+g",
+        "mac": "cmd+shift+g",
+        "when": "editorFocus"
+      },
+      {
+        "command": "gitroast.addInlineComments",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r",
+        "when": "editorFocus"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "gitroast-sidebar",
+          "title": "GitRoast",
+          "icon": "$(flame)"
+        }
+      ]
+    },
+    "views": {
+      "gitroast-sidebar": [
+        {
+          "id": "gitroastView",
+          "name": "GitRoast",
+          "type": "webview"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "GitRoast",
+      "properties": {
+        "gitroast.mcpServerPath": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to your GitRoast MCP server directory (the folder containing pyproject.toml)"
+        },
+        "gitroast.defaultPersonality": {
+          "type": "string",
+          "enum": ["comedian", "yc_founder", "senior_dev", "zen_mentor", "stranger"],
+          "default": "comedian",
+          "description": "Default roast personality mode"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "18.x",
+    "typescript": "^5.3.0"
+  }
+}
