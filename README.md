@@ -161,6 +161,31 @@ The extension auto-detects the MCP server path — no manual config needed.
 - `Ctrl+Shift+G` / `Cmd+Shift+G` — Analyze GitHub Profile
 - `Ctrl+Shift+R` / `Cmd+Shift+R` — Add Inline Code Comments
 
+### 6. Run via Terminal CLI (`roast.py`)
+
+You can also run all GitRoast features directly from your terminal:
+
+```bash
+# 1. Developer Profile Roast
+python roast.py abhishek481828 comedian
+
+# 2. Code Quality Analysis (pylint, radon, AST secrets)
+python roast.py code abhishek481828
+
+# 3. Multi-Agent Idea Stress Tester (The Believer vs The Destroyer vs The Judge)
+python roast.py debate "An AI app that roasts developer GitHub profiles"
+
+# 4. AI Project Scaffolder & 4-Week Roadmap
+python roast.py scaffold "AI developer intelligence platform"
+
+# 5. Competitor Researcher
+python roast.py competitors "developer intelligence"
+
+# 6. Team Roast & Leaderboard
+python roast.py team torvalds,octocat,abhishek481828
+```
+
+
 ---
 
 ## Usage Examples
