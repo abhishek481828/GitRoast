@@ -86,7 +86,7 @@ It doesn't lie. It doesn't guess. It uses **real GitHub data** — commits, PRs,
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/source-rashi/GitRoast.git
+git clone https://github.com/abhishek481828/GitRoast.git
 cd gitroast
 
 python -m venv .venv
@@ -568,6 +568,6 @@ MIT — see [LICENSE](LICENSE). Use it, fork it, ship it. Just don't make it mea
 
 *GitRoast roasts you because it cares.*
 
-[![Star this repo](https://img.shields.io/github/stars/source-rashi/GitRoast?style=social)](https://github.com/source-rashi/GitRoast)
+[![Star this repo](https://img.shields.io/github/stars/abhishek481828/GitRoast?style=social)](https://github.com/abhishek481828/GitRoast)
 
 </div>
